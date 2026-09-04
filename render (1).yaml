@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: shingouki-nyusatsu
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+
+  - type: cron
+    name: shingouki-nyusatsu-notify
+    env: python
+    plan: free
+    schedule: "0 23 * * *"
+    buildCommand: pip install -r requirements.txt
+    startCommand: python notify.py
+    envVars:
+      - key: SMTP_HOST
+        sync: false
+      - key: SMTP_PORT
+        sync: false
+      - key: SMTP_USER
+        sync: false
+      - key: SMTP_PASSWORD
+        sync: false
+      - key: MAIL_FROM
+        sync: false
+      - key: MAIL_TO
+        sync: false
