@@ -219,7 +219,7 @@ INDEX_HTML = """<!doctype html>
   </div>
   <div>
     <h1>信号機入札ナビ</h1>
-    <p>信号機・信号灯器・信号制御機など信号機関連の入札公告のうち、国家公安委員会の案件だけを検索（締切が近い順）</p>
+    <p>信号機・信号灯器・信号制御機など信号機関連の入札公告を検索（締切が近い順）</p>
   </div>
 </div>
 
@@ -262,7 +262,7 @@ INDEX_HTML = """<!doctype html>
         <button class="search-btn" type="submit">検索する</button>
       </div>
     </form>
-    <p class="keyword-note">検索対象キーワード: 信号機 / 信号灯器 / 信号制御機 / 押ボタン信号 / 歩行者用灯器 / 灯器 / 信号柱 / 交通信号（発注機関: 国家公安委員会）</p>
+    <p class="keyword-note">検索対象キーワード: 信号機 / 信号灯器 / 信号制御機 / 押ボタン信号 / 歩行者用灯器 / 灯器 / 信号柱 / 交通信号（発注機関の指定なし・全機関から検索）</p>
   </div>
 
   <div class="legend">
